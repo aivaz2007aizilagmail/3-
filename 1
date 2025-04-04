@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    // Определяем константу для размера массива
+    const int COLOR_COUNT = 3;
+    
+    // Инициализируем массив названий цветов
+    char color_names[COLOR_COUNT][10] = {
+        "красный", 
+        "синий", 
+        "зеленый"
+    };
+
+    // Выводим элементы массива с использованием константы
+    for (int i = 0; i < COLOR_COUNT; i++) {
+        printf("%s\n", color_names[i]);
+    }
+
+    return 0;
+}
